@@ -2,7 +2,7 @@
 
 🚀 About Me
 
-🖥️ Self-learning Python and JavaScript through books
+🖥️ Self-learning Python and JavaScript through books (started on 20th January,2025)
 
 🎯 Aspiring Software Engineer with a goal to work in Japan
 
