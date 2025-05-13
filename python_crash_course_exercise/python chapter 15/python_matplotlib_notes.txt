@@ -1,0 +1,86 @@
+📊 Data Visualization:-
+Data visualization is the use of visual representations (like charts and plots) to explore and present patterns in datasets. It helps in understanding trends, distributions, and relationships within the data.
+
+📈 Data Analysis:-
+Data analysis involves using code to explore patterns, trends, and connections in a dataset. It often includes tasks like cleaning data, running statistical tests, and visualizing results.
+
+📁 Datasets:-
+A dataset is a collection of data. It can range from a small list of numbers that fits on a single line of code to terabytes of complex information including text, images, and more.
+
+🧮 Matplotlib Basics
+🔹 Variables:
+fig: Represents the entire figure — the complete visual output that can include one or more plots.
+
+ax: Represents a single plot (also called an Axes) within the figure.
+
+🔹 Plotting Functions:
+plot(): Plots a line graph or data points in a meaningful way based on the input.
+
+scatter(): Creates a scatter plot. It accepts arguments like:
+
+s=: sets the size of the dots.
+
+color=: sets the fill color.
+
+edgecolor=: sets the outline color of each dot.
+
+🔹 Styling & Labels:
+set_xlabel() / set_ylabel(): Set the labels for the X and Y axes.
+
+tick_params(): Style the tick marks (size, direction, color, etc.).
+
+ticklabel_format(): Override the default tick label formatting.
+
+fontsize=: Keyword argument used to set the font size of text elements.
+
+🔹 Axis Control:
+axis(): Defines the range for each axis. Takes a list of 4 values: [x_min, x_max, y_min, y_max].
+
+figsize=(width, height): Sets the size of the figure in inches (e.g., figsize=(10, 6)). Matplotlib assumes a screen resolution of 100 pixels per inch.
+
+🔹 Display:
+plt.show(): Opens Matplotlib’s viewer and displays the figure.
+
+🎨 Colormaps:
+A colormap is a gradient of colors that range from a starting to an ending color. Useful in visualizations where color intensity matters.
+
+RGB values: Closer to 0 = darker color, closer to 1 = lighter color.
+
+Example: color=(r, g=0.8, b).
+
+🎲 Random Walk
+A random walk is a path that is determined by a series of random decisions. Each step is entirely based on chance. It’s often used to simulate unpredictable processes or behavior.
+
+📊 Plotly Basics
+🔹 Overview:
+Plotly is a powerful library for creating interactive visualizations, especially useful for web-based projects since it automatically scales to fit different screens.
+
+Plotly Express is a high-level wrapper that allows you to create charts with minimal code.
+
+🔹 Plotting:
+px.bar(x, y): Creates a bar chart using the given x and y values.
+
+Additional options:
+
+title=: Sets the chart title.
+
+labels=: A dictionary to rename x and y axis labels, e.g., labels={"x": "Year", "y": "Revenue"}.
+
+🔹 Display & Export:
+fig.show(): Renders and opens the chart in a new browser tab as an HTML file.
+
+fig.write_html("filename.html"): Saves the chart as an HTML file locally.
+
+🔹 Customization:
+update_layout(): Updates many aspects of the figure after it’s created — like title, axis ranges, background color, and more.
+
+🎲 Fun Fact: Dice Notation
+Dice are named based on the number of their sides:
+
+D6: 6-sided die
+
+D8: 8-sided die
+
+D20: 20-sided die
+
+And so on.
