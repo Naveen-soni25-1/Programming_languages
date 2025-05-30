@@ -12,11 +12,11 @@ while True:
     plt.style.use('classic')
     fig, ax = plt.subplots(figsize=(10, 6))
     point_number = range(rw.num_points)
-    ax.plot(rw.x_values, rw.y_values, linewidth=3)
-    ax.set_aspect('equal')
+    ax.plot(rw.x_values, rw.y_values, linewidth=1)
+    ax.set_aspect('equal') # 'equal': Same scaling for x and y (i.e., 1 unit on x = 1 unit on y).
 
     # Emphasize the first and last points
-    ax.scatter(0, 0, c='green', edgecolors='none', s=100)
+    ax.scatter(0, 0, c='purple', edgecolors='none', s=100)
     ax.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none',
         s=100)
     

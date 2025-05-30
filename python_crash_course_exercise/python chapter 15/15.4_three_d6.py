@@ -22,6 +22,6 @@ for value in poss_results:
     frequencies.append(frequecy)
 
 title = 'Rolling The Three D6, 1_000 times'
-labels = {'x':'Result', 'y':'Frequencies of Result'}
-fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels)
+labels = {'x':'Result', 'y':'Frequencies of Result', 'color':'frequencies'}
+fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels, color=poss_results)
 fig.show()

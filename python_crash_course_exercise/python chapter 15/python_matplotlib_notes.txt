@@ -9,9 +9,9 @@ A dataset is a collection of data. It can range from a small list of numbers tha
 
 🧮 Matplotlib Basics
 🔹 Variables:
-fig: Represents the entire figure — the complete visual output that can include one or more plots.
+fig: The overall container or window for the plot.
 
-ax: Represents a single plot (also called an Axes) within the figure.
+ax: The actual plotting area where data points, labels, and ticks go.
 
 🔹 Plotting Functions:
 plot(): Plots a line graph or data points in a meaningful way based on the input.

@@ -1,0 +1,43 @@
+There is two common file format use in this chapter:
+1.CSV file format
+2.Json file format
+
+The CSV File Format:->  One simple way to store data in a text file is to write the data as a series of 
+values separated by commas, called comma-separated values. 
+
+pathlib() :-> This modlue is use in this chapter to find path of the file. 
+splitlines() :-> This method return the list contaning lines
+csv.reader():-> This can be use to parse each line in the file # argument pass should be an iterable
+fig.autofmt_xdate():-> (in matplotlib) Draws the "date" labels diagonally to prevent them from overlapping
+ax.legend():--> (in matplotlib)  is used to display the legend on your plot. The legend shows the labels you've assigned to 
+    each plotted line, marker, or object using the (label= parameter.)[this in plot or whatever]
+
+ax.fill_between():-> (in matplotlib) fill_between() takes a series of x-values and two 
+series of y-values and fills the space between the two series of y-values 
+" The alpha argument controls a color’s transparency, An alpha value of 0 is completely transparent"
+
+The update_layout():-> (in plotly) method acts on the fig object,can be used to make a wide 
+variety of updates.(e/g  fig.update_layout(xaxis_dtick=1))  
+#"xaxis_dtick argument" specifies the distance between tick marks on the x-axis. 
+#We set that spacing to 1, so that every bar is labeled."
+
+Python’s csv module in the standard library parses the lines in a CSV file,
+and allows us to quickly extract the values we’re interested in
+
+The strptime() method can take a variety of arguments to determine how to interpret the date.
+(e.g datetime.strptime('2021-07-01', '%Y-%m-%d')) --> (format which it extrating has to contain all argument which pass ['%Y-%m-%d'].)
+
+below are some of the mot common arguments:
+Date and Time Formatting Arguments from the datetime Module.
+ Argument Meaning
+ %A - Weekday name, such as Monday
+ %B - Month name, such as January
+ %m - Month, as a number (01 to 12)
+ %d - Day of the month, as a number (01 to 31)
+ %Y - Four-digit year, such as 2019
+ %y - Two-digit year, such as 19
+ %H - Hour, in 24-hour format (00 to 23)
+ %I - Hour, in 12-hour format (01 to 12)
+ %p -  AM or PM
+ %M - Minutes (00 to 59)
+ %S - Seconds (00 to 61)

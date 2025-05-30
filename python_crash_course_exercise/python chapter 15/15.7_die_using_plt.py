@@ -15,11 +15,11 @@ style  = "dark_background"
 fs = 14
 ls = 14
 
-plt.style.use(style)
+plt.style.use(style='dark_background')
 fig, ax = plt.subplots()
 
 # set plot type
-ax.bar(range(1, die.num_sides+1), frequencies, 0.3)
+ax.bar(range(1, die.num_sides+1), frequencies, 0.3, edgecolor='white')
 # labels, title, fontsize
 ax.set_title(title, fontsize=fs)
 ax.set_xlabel(xlabel=x_label, fontsize=fs)

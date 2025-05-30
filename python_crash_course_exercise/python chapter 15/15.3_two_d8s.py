@@ -8,14 +8,14 @@ die_2 = Die(8)
 
 results = []
 # Roll both the dies.
-for roll_num in range(1_000):
+for _ in range(1_000):
     result = die_1.roll() + die_2.roll()
     results.append(result)
 
 # Analyze the result.
 frequencies = []
 max_results = die_1.num_sides + die_2.num_sides
-poss_results = range(2, max_results+1)
+poss_results = list(range(2, max_results+1))
 for value in poss_results:
     frequecy = results.count(value) # count same value in list
     frequencies.append(frequecy)
