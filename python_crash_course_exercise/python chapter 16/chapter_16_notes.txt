@@ -1,3 +1,6 @@
+An Artist is any object that knows how to draw itself on the figure canvas.
+(e.g line = ax.plot(x, y)[0] line is a Line2D Artist — it’s the object that knows how to draw that line on the plot)
+
 There is two common file format use in this chapter:
 1.CSV file format
 2.Json file format
@@ -6,10 +9,16 @@ The CSV File Format:->  One simple way to store data in a text file is to write 
 values separated by commas, called comma-separated values. 
 
 pathlib() :-> This modlue is use in this chapter to find path of the file. 
-splitlines() :-> This method return the list contaning lines
+
+plt.tight_layout():-> automatically adjusts the spacing between subplots to prevent things like:
+Titles or axis labels overlapping each other
+Cut-off labels, ticks, or titles
+Crowded or messy layout
+
+splitlines() :-> This method return the list contaning lines 
 csv.reader():-> This can be use to parse each line in the file # argument pass should be an iterable
 fig.autofmt_xdate():-> (in matplotlib) Draws the "date" labels diagonally to prevent them from overlapping
-ax.legend():--> (in matplotlib)  is used to display the legend on your plot. The legend shows the labels you've assigned to 
+ax.legend():-> (in matplotlib)  is used to display the legend on your plot. The legend shows the labels you've assigned to 
     each plotted line, marker, or object using the (label= parameter.)[this in plot or whatever]
 
 ax.fill_between():-> (in matplotlib) fill_between() takes a series of x-values and two 
@@ -20,6 +29,9 @@ The update_layout():-> (in plotly) method acts on the fig object,can be used to 
 variety of updates.(e/g  fig.update_layout(xaxis_dtick=1))  
 #"xaxis_dtick argument" specifies the distance between tick marks on the x-axis. 
 #We set that spacing to 1, so that every bar is labeled."
+
+heaader_row = next(reader) :-> It skips the first row of the CSV file 
+(which usually contains the column headers like "Name", "Age", "City"), and stores it in the header_row variable.
 
 Python’s csv module in the standard library parses the lines in a CSV file,
 and allows us to quickly extract the values we’re interested in
