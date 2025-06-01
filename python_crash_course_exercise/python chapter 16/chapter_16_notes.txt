@@ -15,6 +15,19 @@ Titles or axis labels overlapping each other
 Cut-off labels, ticks, or titles
 Crowded or messy layout
 
+("defaultdict") is a special kind of dictionary from Python’s collections module.
+When you try to access a key that doesn't exist, instead of raising a KeyError, 
+it automatically creates a default value for that key using the function you give it.
+(e.g station_data = defaultdict(lambda: {"dates": [], "tmaxs": [], "tmins": []})) # defaultdict(function)
+
+("lamda"):-> This is a function with no name (called an anonymous function).
+Every time a new station ID (e.g., "GHCND:USW00023234") is encountered, this function is called to create a new entry like:
+(e.g  {
+    "dates": [], 
+    "tmaxs": [], 
+    "tmins": []
+})
+
 splitlines() :-> This method return the list contaning lines 
 csv.reader():-> This can be use to parse each line in the file # argument pass should be an iterable
 fig.autofmt_xdate():-> (in matplotlib) Draws the "date" labels diagonally to prevent them from overlapping
