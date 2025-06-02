@@ -1,4 +1,3 @@
-#USC00047339
 from collections import defaultdict
 from pathlib import Path
 from datetime import datetime
