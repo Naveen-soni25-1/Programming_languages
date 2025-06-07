@@ -76,4 +76,4 @@ Lay a strong foundation for CS and development
 🙋‍♂️ About Me
 Naveen Soni
 Python Developer | CS Learner
-🌐 My GitHub Page
+🌐 https://github.com/Naveen-soni25-1/Naveen-soni25-1.github.io
